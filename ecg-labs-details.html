@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ECG Labs - Master ECG Interpretation</title>
+        <link
+            rel="shortcut icon"
+            href="./assets/images/home/ecg_labs_icon.png"
+            type="image/x-icon"
+        />
+        
+        <link rel="stylesheet" href="./css/tailwind-runtime.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body
+        class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fff] tw-font-mono"
+    >
+        <header
+            class="tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] max-lg:tw-mr-auto max-lg:tw-px-4 lg:tw-justify-around"
+        >
+            <a
+                class="tw-h-[50px] tw-p-[4px] tw-text-2xl tw-font-medium max-md:tw-hidden"
+                href="index.html"
+            >
+                Cardioverse
+            </a>
+            <div
+                class="collapsible-header animated-collapse max-lg:tw-shadow-md"
+                id="collapsed-header-items"
+            >
+                <div
+                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-black max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-ml-auto lg:tw-place-items-center"
+                >
+                    <a class="header-links" href="index.html"> Home </a>
+                    <a class="header-links" href="#features"> Features </a>
+                    <a class="header-links" href="#contact"> Contact us </a>
+                </div>
+            </div>
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-black lg:tw-hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            ></button>
+        </header>
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-p-4 max-md:tw-mt-[25px]"
+        >
+            <div
+                class="tw-flex tw-h-full tw-min-h-[80vh] tw-w-full tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-flex-col"
+            >
+                <div class="tw-flex tw-flex-col tw-place-content-center">
+                    <div
+                        class="tw-flex tw-flex-wrap tw-text-7xl tw-font-semibold tw-uppercase tw-leading-[85px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                    >
+                        <span
+                            class="reveal-hero-text tw-bg-[#6029b8] tw-p-1 tw-px-6 tw-text-white"
+                        >
+                            ECG Labs
+                        </span>
+                        <br />
+                        <span class="reveal-hero-text">
+                            Learn. Master. Excel.</span
+                        >
+                    </div>
+                    <div
+                        class="reveal-hero-text tw-mt-2 tw-max-w-[450px] tw-p-2 tw-text-justify max-lg:tw-max-w-full"
+                    >
+                        Simplifying ECG Interpretation for Professionals and Students Alike.
+                    </div>
+
+                    <div
+                        class="reveal-hero-text tw-mt-4 tw-flex tw-place-items-center tw-gap-4 tw-overflow-hidden tw-p-2"
+                    >
+                        <a
+                            href="#contact"
+                            aria-label="get in touch"
+                            class="tw-flex tw-h-[40px] tw-place-items-center tw-gap-2 tw-rounded-full tw-border-[1px] tw-border-solid tw-border-black tw-bg-white tw-p-1 tw-pl-4 tw-text-black tw-transition-colors tw-duration-[0.5s] hover:tw-bg-black hover:tw-text-white"
+                        >
+                            <span>Get in touch</span>
+                            <div
+                                class="tw-flex tw-h-[30px] tw-w-[30px] tw-place-content-center tw-place-items-center tw-rounded-full tw-bg-black tw-font-semibold tw-text-white"
+                            >
+                                <i class="bi bi-arrow-up-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="tw-flex tw-w-full tw-max-w-[50%] tw-place-content-center tw-place-items-center tw-overflow-hidden max-lg:tw-max-w-[unset]"
+                >
+                    <div
+                        class="tw-relative tw-flex tw-max-h-[580px] tw-min-h-[450px] tw-min-w-[350px] tw-max-w-[650px] tw-overflow-hidden max-lg:tw-h-fit max-lg:tw-max-h-[320px] max-lg:tw-min-h-[180px] max-lg:tw-w-[320px] max-lg:tw-min-w-[320px]"
+                    >
+                        <img
+                            src="./assets/images/home/ecg_labs_appicon.png"
+                            alt="ECG Labs app icon"
+                            class="reveal-hero-img tw-z-[1] tw-w-full tw-object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-items-center tw-overflow-hidden tw-p-6 tw-py-5"
+            id="features"
+        >
+            <h3 class="reveal-up tw-text-6xl tw-font-medium max-lg:tw-text-3xl">
+                Features
+            </h3>
+            <div
+                class="reveal-up tw-my-4 tw-h-[1px] tw-w-[80%] tw-bg-black"
+            ></div>
+            <div
+                class="tw-mt-8 tw-flex tw-flex-wrap tw-place-content-center tw-gap-10 max-lg:tw-flex-col"
+            >
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]"
+                >
+                    <h3 class="tw-text-xl tw-font-medium">Interactive Tutorials</h3>
+                    <p class="tw-text-gray-600">
+                        Learn through interactive ECG cases that simulate real-world clinical scenarios, helping you practice ECG interpretation in a supportive environment.
+                    </p>
+                </div>
+
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]"
+                >
+                    <h3 class="tw-text-xl tw-font-medium">Detailed Explanations</h3>
+                    <p class="tw-text-gray-600">
+                        Each ECG case comes with comprehensive explanations, allowing you to understand not just the "what" but also the "why" of every rhythm and pattern.
+                    </p>
+                </div>
+
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]"
+                >
+                    <h3 class="tw-text-xl tw-font-medium">Progress Tracking</h3>
+                    <p class="tw-text-gray-600">
+                        Track your progress over time and see how your skills improve. Identify areas of strength and those that need more practice.
+                    </p>
+                </div>
+
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]"
+                >
+                    <h3 class="tw-text-xl tw-font-medium">Community Support</h3>
+                    <p class="tw-text-gray-600">
+                        Join a community of learners and experts. Discuss ECG cases, share insights, and ask questions to deepen your understanding.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+            id="contact"
+        >
+            <div
+                class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5"
+            >
+                <div
+                    class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
+                >
+                    <h2 class="tw-text-4xl tw-font-semibold">
+                        Get In Touch
+                    </h2>
+                    <p class="tw-text-[#595959]">
+                        Have questions about ECG Labs or want to know more about how it can help you master ECG interpretation? Contact us today!
+                    </p>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-place-content-center tw-gap-2 max-lg:tw-flex-col"
+                >
+                    <a
+                        href="mailto:example@email.com"
+                        class="reveal-up tw-flex tw-h-[40px] tw-place-items-center tw-gap-2 tw-rounded-full tw-border-[1px] tw-border-solid tw-border-black tw-bg-white tw-p-1 tw-pl-4 tw-text-black tw-transition-colors tw-duration-[0.5s] hover:tw-bg-black hover:tw-text-white"
+                    >
+                        <span>Send us an email</span>
+                        <div
+                            class="tw-flex tw-h-[30px] tw-w-[30px] tw-place-content-center tw-place-items-center tw-rounded-full tw-bg-black tw-font-semibold tw-text-white"
+                        >
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer
+            class="tw-mt-auto tw-flex tw-min-h-[100px] tw-w-full tw-place-content-around tw-place-items-center tw-gap-3 tw-p-[2%] tw-px-[10%] tw-text-black max-md:tw-flex-col"
+        >
+            <div class="tw-flex tw-gap-6 tw-text-2xl">
+                <a href="https://github.com/cardioverse" aria-label="Github">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a
+                    href="https://twitter.com/@cardioverse"
+                    aria-label="Twitter"
+                >
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </div>
+        </footer>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+</html>
